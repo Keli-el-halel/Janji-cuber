@@ -1,0 +1,166 @@
+div.down {
+    text-align: center;
+    text-decoration: none;
+}
+
+#demo {
+    /* text-align: center; */
+}
+div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+  }
+  
+  /* div.scrollmenu a:hover {
+    background-color: #777;
+  } */
+
+.pointer {
+
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.dropbtn {
+    padding: 10px;
+    font-size: 11px;
+    border: none;
+    text-decoration: none;
+    background: none;
+}
+
+.drpbtn{
+
+    text-decoration: none;
+    font-size: 16px;
+}
+.dropbtn a{
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+p {
+    padding: 0 25%;
+}
+
+.header {
+    color: red;
+    font-family: georgia;
+    font-size: 160%;
+}
+
+.footer {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.hiyafoota {
+
+    position: center;
+}
+
+.image{
+
+    width: 800px;
+    height: 400px;
+}
+#gobutton {
+        position: relative;
+        /* left: 540px; */
+        top: 0px;
+}
+
+#stopbutton {
+        position: relative;
+        /* left: 561px; */
+        top: 0px;
+}
+
+#display {
+    /* position: relative; */
+    /* width: 400px; */
+    /* left: 427px; */
+    /* top: 0px; */
+    color: gold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* text-align: center; */
+}
+#gobutton2 {
+    /*position: relative;
+    left: 540px;
+    top: 0px;*/
+}
+
+#stopbutton2 {
+    /*position: relative;
+    left: 561px;
+    top: 0px;*/
+}
+
+#display2 {
+    position: relative;
+    /*width: 400px;
+    left: 427px;
+    */top: 0px;
+    color: gold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#gobutton3 {
+    /* position: relative; */
+    /* left: 532px; */
+    top: 0px;
+}
+
+#stopbutton3 {
+    /* position: relative; */
+    /* left: 544px; */
+    top: 0px;
+}
+.time_section{
+    text-align: center;
+}

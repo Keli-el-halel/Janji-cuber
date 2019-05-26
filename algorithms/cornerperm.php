@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+		<meta name="description" content="Rubik’s Cube">
+		<meta name="keywords" content="Erno Rubik’s Cube">
+		<link rel="stylesheet" type="text/css" href="../styles/cube.css">
+		<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../styles/cardinal.css"> -->
+		<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+		<link rel="icon" type="image/png" href="../media/cuber-favicon-0064x0064.png">
+		<link rel="apple-touch-icon" href="../media/cuber-favicon-0144x0144.png">
+		<style>
+			html, body, #container{
+			 	margin: 0px;
+			 	padding: 0px;
+			 	width: 100%;
+			 	height: 100%;
+			}
+			#container{
+				background: #fff;
+			}
+		</style>
+		<title>Algorithms stage6</title>
+	</head>
+	<body>
+		<!-- navigation bar -->
+		<div id="page links">
+						<center>
+
+							<h1 class="header"><br><img src="../media/janjilogo.png" width="150px" height="60"></h1>
+
+							<div class="dropdown">
+					            <button class="dropbtn"><a href="../index.html">HOME</a></button>
+					        </div>
+
+					        <div class="dropdown">
+					            <button class="dropbtn"><a href="#">MODES</a></button>
+					              <div class="dropdown-content">
+					                <a href="../modes/solver.php" >Janji Solver</a>
+					                <a href="../modes/learn.php" >Learn to solve</a>
+					                <a href="../modes/free.php" >Free solve</a>
+					              </div>
+					        </div>
+					        <div class="dropdown">
+					            <button class="dropbtn"><a href="../algorithms/index.html">ALGORITHMS</a></button>
+					              <div class="dropdown-content">
+					                <a href="../algorithms/algorithms.php">Algorithm Page</a>
+					                <a href="../algorithms/notations.php">Notations</a>
+					              </div>
+					        </div>
+
+					        <div class="dropdown">
+					          <button class="dropbtn"><a href="#">HELP</a></button>
+					            <div class="dropdown-content">
+					              <a href="../about/tips_facts.php">Tips & facts</a>
+					              <a href="https://github.com/Keli-el-halel/Janji-cuber" target="_blank">More Info</a>
+					            </div>
+					        </div>
+					    </center>
+		</div>
+		
+		<!-- message body -->
+		<center>
+        <p><b><a href= "algorithms.php">Yellow Cross<a> | <a href= "yellowcorners.php">Yellow Corners</a> | <a href="middle.php">Middle Layer</a> | <a href="whitecross.php">White Cross</a> |</b><br>
+			<b><a href="whiteedges.php">White Edges</a> | <a href="cornerperm.php">WHITE CORNERS</a> | <a href="finale.php">Finale</a></b></p>
+		</center>
+
+        <p><b>The next step now is to group the white corner pieces with their color groups</b><br>&nbsp<img src="../media/cp/permute.png"></p>
+        <p>We are focusing on these four corner pieces<br>&nbsp<img src="../media/cp/focuscp.png"></p>
+        <p><b>Scan through to see if any (or all) of them are with their color groups</b><br></p>
+        <p>There are only three possible scenarios to consider:<br></p>
+        <p>•<a href="#one" class="drpbtn">One corner piece is in position</a> with its color group<br>&nbsp<img src="../media/cp/oneinpos.png"></p>
+        <p>•<a href="#none" class="drpbtn">No corner piece in position</a> with their color groups<br>&nbsp<img src="../media/cp/noneinpos.png"></p>
+        <p id="one">•All corner pieces are in position with their color groups<br>&nbsp<img src="../media/cp/allinpos.png"></p>
+        
+        <p>If <b>one</b> is with its color group<br>&nbsp<img src="../media/cp/oneinpos.png"></p>
+        <p>Select the face that has the correctly color grouped corner piece at its top right corner<br>&nbsp<img src="../media/cp/oneinposface.png"></p>
+        <p id="none">Perform U-R-U’-L’-U-R’-U’-L (To reshuffle the three other corner pieces)<br></p>
+        <p>Redo until all four white corner pieces are with their color groups<br></p>
+        
+        <p>If <b>none</b> are with their color groups<br>&nbsp<img src="../media/cp/noneinpos.png"></p>
+        <p>Select any of the four side faces as a pivot face<br></p>
+        <p>Perform U-R-U’-L’-U-R’-U’-L (to get one corner piece with its color group)<br></p>
+        <p>Do algorithm for one corner piece with its color group<br></p>
+        <p>If all are within their color groups,<br>&nbsp<img src="../media/cp/allinpos.png"></p>
+        <p>Then proceed to the final stage<br></p>
+				<p><a href="whiteedges.php"><button class="btn btn-xs btn-warning">Back to White Edges</button></a>&nbsp&nbsp&nbsp&nbsp<a href="finale.php"><button class="btn btn-xs btn-success">To Finale</button></a></p>
+
+        <!-- javascript --> 
+		<script src='../js/cube/cuber.min.js'></script>
+		<script src='../js/photon.js'></script>
+		<script src='../js/jg.js'></script>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		
+		<br><br>
+		<footer class="footer">© 2019 Janji Productions.</footer>
+	</body>
+</html>
